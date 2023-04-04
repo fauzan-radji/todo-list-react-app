@@ -18,10 +18,10 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            to="/todos"
+            to="/lists"
             className="p-4 text-white no-underline hover:text-accent"
           >
-            Todos
+            Lists
           </Link>
           <Link
             to="/settings"

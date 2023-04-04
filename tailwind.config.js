@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,6 +21,13 @@ module.exports = {
         },
         secondary: "#084172",
         accent: "#ffc085",
+
+        // alias
+        veryImportant: colors.red,
+        important: colors.orange,
+        medium: colors.yellow,
+        unimportant: colors.lime,
+        veryUnimportant: colors.green,
       },
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],

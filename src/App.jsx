@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import { Home, Todos, Settings } from "./views/Views";
+import { Home, Settings, Lists } from "./views/Views";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <main className="container mx-auto px-4">
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/todos" exact element={<Todos />} />
+            <Route path="/lists" exact element={<Lists />} />
             <Route path="/settings" exact element={<Settings />} />
           </Routes>
         </main>

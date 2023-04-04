@@ -11,23 +11,23 @@ export default class Todo extends React.Component {
       },
       {
         text: "very unimportant",
-        border: "border-green-500",
+        border: "border-veryUnimportant-500",
       },
       {
         text: "unimportant",
-        border: "border-lime-500",
+        border: "border-unimportant-500",
       },
       {
         text: "medium",
-        border: "border-yellow-500",
+        border: "border-medium-500",
       },
       {
         text: "important",
-        border: "border-orange-500",
+        border: "border-important-500",
       },
       {
         text: "very important",
-        border: "border-red-500",
+        border: "border-veryImportant-500",
       },
     ];
     this.state = {
