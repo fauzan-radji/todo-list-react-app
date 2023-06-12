@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import { Home, Settings, Lists } from "./views/Views";
+import { Home, Settings, Lists, Todos } from "./views/Views";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/lists" exact element={<Lists />} />
+            <Route path="/lists/:listId" exact element={<Todos />} />
             <Route path="/settings" exact element={<Settings />} />
           </Routes>
         </main>

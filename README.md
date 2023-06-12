@@ -31,10 +31,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Run JSON-Server as an API.
 
-| Endpoints                   | Description                         |
-| --------------------------- | ----------------------------------- |
-| **GET** `/lists`            | Get all lists                       |
-| **GET** `/lists/:id`        | Get specific lists                  |
-| **GET** `/todos`            | Get all todos                       |
-| **GET** `/todos/:id`        | Get specific todos                  |
-| **GET** `/todos/?list_id=x` | Get specific todos in specific list |
+| Method  | Endpoints          | Description                         |
+| ------- | ------------------ | ----------------------------------- |
+| **GET** | `/lists`           | Get all lists                       |
+| **GET** | `/lists/:id`       | Get specific lists                  |
+| **GET** | `/lists/:id/todos` | Get specific todos in specific list |
+| **GET** | `/todos`           | Get all todos                       |
+| **GET** | `/todos/:id`       | Get specific todos                  |
