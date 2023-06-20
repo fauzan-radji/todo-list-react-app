@@ -1,10 +1,12 @@
 # Todo List React App
 
-## Available Scripts
+Todo list app created with React.
 
-In the project directory, you can run:
+## Running the app
 
-### `npm start`
+```bash
+$ npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -12,24 +14,21 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Run API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run db`
+```bash
+$ npm run db
+```
 
 Run JSON-Server as an API.
+
+Configure your api endpoint in the `.env` file as `REACT_APP_API_PORT`
+
+```
+REACT_APP_API_PORT=3030
+```
+
+It will be running at http://0.0.0.0:3030
 
 | Method  | Endpoints          | Description                         |
 | ------- | ------------------ | ----------------------------------- |
