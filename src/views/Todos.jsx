@@ -14,19 +14,22 @@ export default function Todos() {
       .then((data) => {
         setTodos(data);
       });
-  }, []);
+  }, [listId]);
 
   return (
     <div className="flex flex-col gap-4">
-      {todos.map((todo) => (
-        <Todo
-          key={todo.id}
-          title={todo.title}
-          description={todo.description}
-          importance={todo.importance}
-          deadline={todo.deadline}
-        />
-      ))}
+      {todos
+        .sort((a, b) => b.importance - a.importance)
+        .map((todo) => (
+          <Todo
+            key={todo.id}
+            id={todo.id}
+            title={todo.title}
+            description={todo.description}
+            importance={todo.importance}
+            deadline={todo.deadline}
+          />
+        ))}
     </div>
   );
 }

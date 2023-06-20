@@ -35,21 +35,22 @@ export default class Todo extends React.Component {
 
   render() {
     return (
-      <div className="Todo flex-1 rounded-md border border-accent px-4 py-2">
-        <h1 className="text-xl font-bold">{this.props.title}</h1>
-        <p className="text-xs">
-          <span className="text-primary-500">{this.props.deadline}</span>
-          &nbsp;
-          <span
-            className={`rounded-md border ${this.state.importance.border} px-1`}
-          >
-            {this.state.importance.text}
-          </span>
-        </p>
-
-        <p className="pt-2 text-sm text-primary-100">
-          {this.props.description}
-        </p>
+      <div
+        className={`Todo rounded-md border-l-4 bg-primary-800 ${this.state.importance.border} py-2 pl-3 pr-4`}
+      >
+        <label
+          className="flex items-center gap-3"
+          htmlFor={`checkbox-${this.props.id}`}
+        >
+          <input
+            type="checkbox"
+            className="peer h-4 w-4 flex-shrink-0 appearance-none rounded-md border border-accent bg-transparent checked:bg-accent"
+            id={`checkbox-${this.props.id}`}
+          />
+          <h1 className="truncate text-xl font-bold peer-checked:line-through">
+            {this.props.title}
+          </h1>
+        </label>
       </div>
     );
   }
